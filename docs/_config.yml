@@ -1,8 +1,4 @@
 name: Hank Quinlan, Horrible Cop
 markdown: kramdown
 url: https://carolinewin.com
-repository: https://github.com/wincaroline/wincaroline.github.io
-collections:
-  docs:
-    permalink: "/:collection/:path/"
-    output: true
+repository: https://github.com/wincaroline/wincaroline.github.io/docs
