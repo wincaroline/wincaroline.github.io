@@ -1,1 +1,14 @@
+title: Caroline Win
+role: User Experience Designer
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Hello! My name is Caroline Win. I'm a user experience designer currently based on Los Angeles, California.
+baseurl: "carolinewin.com" # the subpath of your site, e.g. /blog
+url: "carolinewin" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
 theme: minima
+plugins:
+  - jekyll-feed

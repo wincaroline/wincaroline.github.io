@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <main>
+    <div class="headerwhitecontainer">
+      <header>{%- include header.html -%}</header>
+    </div>
+
+    <div class="grayBackground">
+      <div class="containernarrow" style="text-align: center;">
+        <h2 class="preheaderlightL">RESUME</h2>
+        <a href="{{ page.file }}"><img src="{{ page.image }}" class="resume" alt="resume"></a><br>
+        <a href="{{ page.file }}"><button>View PDF of Resume</button></a>
+      </div>
+  </div>
+
+
+
+
+
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>

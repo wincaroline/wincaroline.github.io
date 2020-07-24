@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    <main aria-label="Content">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+            <div class="featureBackground" style="background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 100%), url({{ page.featureimg }}) no-repeat right top; background-size: cover;">
+              <div class="featureBox">
+
+                <!-- Header -->
+                <header class=projectheader>{%- include header.html -%}</header>
+
+                <div class="featuretext">
+                  <div class="twothird">
+                    <p class="h2preheader">{{ page.company }}</p>
+                    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+                    <p class="post-meta date">
+                      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {{ page.date | date: date_format }}
+                      </time>
+                      {%- if page.modified_date -%}
+                        ~
+                        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+                        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+                          {{ mdate | date: date_format }}
+                        </time>
+                      {%- endif -%}
+                      {%- if page.author -%}
+                        • {% for author in page.author %}
+                          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+                            {%- if forloop.last == false %}, {% endif -%}
+                        {% endfor %}
+                      {%- endif -%}</p>
+                      {% for tag in page.tags %}
+                        <p class="tag">{{ tag }}</p>
+                      {% endfor %}
+
+                    <p class="h2subheader">{{ page.description }}</p>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="e-content" itemprop="articleBody">
+            {{ content }}
+          </div>
+
+
+          <div class="grayBackground">
+            <div class="containerwide" style="margin-bottom: 0; padding-bottom: 0;">
+
+
+              <div class="halfleft">
+                {% if page.previous.url %}
+                <p class="prevnext">Previous</p>
+                <a href="{{ page.previous.url }}" class="prevnextlink">{{ page.previous.title }}</a>
+                <p>{{ page.previous.date | date: date_format }}</p>
+                {% endif %}
+              </div>
+
+
+
+              <div class="halfright right">
+                {% if page.next.url %}
+                <p class="prevnext">Next</p>
+                <a href="{{ page.next.url }}" class="prevnextlink">{{ page.next.title }}</a>
+                <p>{{ page.next.date | date: date_format }}</p>
+                {% endif %}
+              </div>
+
+
+            </div>
+          </div>
+
+        </article>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

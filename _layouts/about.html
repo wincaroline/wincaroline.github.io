@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <main>
+    <div class="headerwhitecontainer">
+      <header>{%- include header.html -%}</header>
+    </div>
+
+    <div class="grayBackground">
+      <div class="containernarrow">
+      <h2 class="preheaderlightL" style="text-align: left;">ABOUT ME</h2>
+      <h1 class="hello">Hello! My name is <span class="superlogo">Caroline Win</span>.</h1>
+      <div class="mediumspace"></div>
+      <div class="thirdtext">
+        <img src="/assets/photo.JPG" alt="about photo" style="width: 100%;">
+      </div>
+      <div class="twothird">
+        {{ content }}
+      </div>
+      <div class="largespace"></div>
+      <h3>Send me a message!</h3>
+      <p>carolinemwin@gmail.com</p>
+      <br>
+      <a href = "https://www.linkedin.com/in/caroline-win-33527913">
+        <img src="/assets/linkedin.svg">
+      </a>
+      <a href = "https://twitter.com/caroline_win">
+        <img class = "iconsHeader" src="/assets/twitter.svg">
+      </a>
+      <a href = "https://www.instagram.com/carothejelly/">
+        <img class = "iconsHeader" src="/assets/instagram.svg">
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <main>
+    <div class="introcontainer">
+      <header>{%- include header.html -%}</header>
+      <div class="introtext">
+        <h1 class="hello">Hello! My name is <span class="superlogo">Caroline Win</span>.</h1>
+        <p class="hellosubheader">I'm a user experience designer currently based in Los Angeles, California.</p>
+      </div>
+    </div>
+
+    <div class="grayBackground">
+      <div class="containerwide">
+        {%- if page.list_title -%}
+        <h2 class="preheaderlightL">{{ page.list_title }}</h2>
+        {%- endif -%}
+        <div>
+
+          {% if site.paginate %}
+            {% assign posts = paginator.posts %}
+          {% else %}
+            {% assign posts = site.posts %}
+          {% endif %}
+
+
+          {%- if posts.size > 0 -%}
+            <ul class="post-list">
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              {%- for post in posts -%}
+
+
+              {% if post.layout == "casestudy" %}
+              <li class = "projecttile">
+              <a href="{{ post.url | relative_url }}">
+                  <img class="homeImg" src="{{ post.projectimg }}">
+                  <div class="projectText">
+                    <div class="hometiletext">
+                    <h2 class="hometitle">{{ post.title | escape }}</h2>
+                    <p class="preheaderlightS">{{ post.company }}</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              {% endif %}
+
+
+              {%- endfor -%}
+            </ul>
+
+          {%- endif -%}
+
+
+        </div>
+      </div>
+    </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
