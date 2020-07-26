@@ -22,6 +22,7 @@ html {
   background-color: #147DB2;
   font-family: "Assistant", "Verdana", serif;
   color: #4A4A4A;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -664,8 +665,8 @@ footer {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    /* display: none; */
-    opacity: 0;
+    display: none;
+    // opacity: 0;
 }
 
 #backToTop i {
