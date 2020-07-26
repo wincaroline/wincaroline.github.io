@@ -9,25 +9,25 @@
   <ul>
   <li class = "primaryNav">
     {% if page.title == "Portfolio" %}
-    <a class = "selected primaryNavItems" href = "/index.html"> PORTFOLIO </a>
+    <a class = "selected primaryNavItems" href = "/index.html" onclick="ga('send', 'event', [nav], [click], [portfolio]);"> PORTFOLIO </a>
     {% else %}
-    <a class = "unselected primaryNavItems" href = "/index.html"> PORTFOLIO </a>
+    <a class = "unselected primaryNavItems" href = "/index.html" onclick="ga('send', 'event', [nav], [click], [portfolio]);"> PORTFOLIO </a>
     {% endif %}
   </li>
 
   <li class = "primaryNav">
     {% if page.title == "About" %}
-    <a class = "selected primaryNavItems" href = "/about.html"> ABOUT </a>
+    <a class = "selected primaryNavItems" href = "/about.html" onclick="ga('send', 'event', [nav], [click], [about]);"> ABOUT </a>
     {% else %}
-    <a class = "unselected primaryNavItems" href = "/about.html"> ABOUT </a>
+    <a class = "unselected primaryNavItems" href = "/about.html" onclick="ga('send', 'event', [nav], [click], [about]);"> ABOUT </a>
     {% endif %}
   </li>
 
   <li class = "primaryNav">
     {% if page.title == "Resume" %}
-    <a class = "selected primaryNavItems" href = "/resume.html"> RESUME </a>
+    <a class = "selected primaryNavItems" href = "/resume.html" onclick="ga('send', 'event', [nav], [click], [resume]);"> RESUME </a>
     {% else %}
-    <a class = "unselected primaryNavItems" href = "/resume.html"> RESUME </a>
+    <a class = "unselected primaryNavItems" href = "/resume.html" onclick="ga('send', 'event', [nav], [click], [resume]);"> RESUME </a>
     {% endif %}
   </li>
 
