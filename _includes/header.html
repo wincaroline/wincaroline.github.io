@@ -1,5 +1,5 @@
 <div class="logoBlock">
-    <a href = "{{ "/" | relative_url }}" class="logolink">
+    <a href = "{{ "/" | relative_url }}" class="logolink" onclick="gtag('event', 'click-logo', {'event_category': 'nav', 'event_label': 'logo'});">
         <h2 id = "logo">{{ site.title | escape }}</h2>
         <p class = "small">{{ site.role | escape }}</p>
     </a>
