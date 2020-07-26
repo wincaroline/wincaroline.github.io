@@ -710,6 +710,7 @@ h2 { /* key insight */
   font-weight: 600;
   /* color: #147DB2; */
   color: black;
+  line-height: 44px;
 
 }
 
@@ -965,15 +966,15 @@ strong {
   }
 
   .containernarrow {
-    width: calc(100% - 108px);
-    margin-left: 54px;
-    margin-right: 54px;
+    width: calc(100% - 64px);
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
   .containerwide {
-    width: calc(100% - 108px);
-    margin-left: 54px;
-    margin-right: 54px;
+    width: calc(100% - 64px);
+    margin-left: 32px;
+    margin-right: 32px;
     margin-bottom: 0;
     padding: 0;
   }
@@ -1137,4 +1138,21 @@ strong {
     margin-top: 24px;
   }
 
+  /* 7. TYPOGRAPHY */
+  /* ------------------------------- */
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .h2subheader {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .objectivetext {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+  }
 }
