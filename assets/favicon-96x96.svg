@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>favicon-96x96</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="48" cy="48" r="48"></circle>
+        <linearGradient x1="46.3746596%" y1="10.2537334%" x2="46.3746596%" y2="92.8916703%" id="linearGradient-3">
+            <stop stop-color="#04D1EB" stop-opacity="0.139945652" offset="0%"></stop>
+            <stop stop-color="#1383B5" offset="100%"></stop>
+            <stop stop-color="#147DB2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="103.856338%" id="linearGradient-4">
+            <stop stop-color="#02B1E6" stop-opacity="0.0715862772" offset="0%"></stop>
+            <stop stop-color="#1287B8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#08D0E9" stop-opacity="0.140455163" offset="0%"></stop>
+            <stop stop-color="#147DB2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="favicon-96x96" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-2-+-Rectangle-2-+-Rectangle-2-Mask">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#DDFCFF" xlink:href="#path-1"></use>
+            <path d="M-43,52.3291793 C-21.0020003,52.3291793 -13.4603498,20 16.0859197,20 C38.0892862,20 54.270178,52.3291793 75.1718393,52.3291793 C96.0735007,52.3291793 107.37511,38.5151298 116,28.382017 C116,44.9522644 116,76.8249254 116,124 L-43,124 C-43,94.4534955 -43,70.563222 -43,52.3291793 Z" id="Rectangle-2" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+            <path d="M-35,33 C-11.9040569,55.9229059 9.64860882,67.3843589 29.6579972,67.3843589 C59.6720797,67.3843589 69.4026705,33 94.3159943,33 C110.924877,33 122.819545,42.5537122 130,61.6611367 L130,109 L-35,109 L-35,33 Z" id="Rectangle-2" fill="url(#linearGradient-4)" mask="url(#mask-2)"></path>
+            <path d="M-47,82.0013619 C-25.7565151,82.0013619 -16.5616348,28 9,28 C34.5616348,28 48.7295021,78.8384836 72.6871138,78.8384836 C99.5446481,78.8384836 97.0761208,55.8561449 121,55.8561449 C121,73.2073979 121,93.0981631 121,115.52844 L-47,115.52844 C-47,118.512178 -47,107.336485 -47,82.0013619 Z" id="Rectangle-2" fill="url(#linearGradient-5)" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

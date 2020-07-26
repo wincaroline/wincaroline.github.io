@@ -21,6 +21,7 @@
 html {
   background-color: #147DB2;
   font-family: "Assistant", "Verdana", serif;
+  color: #4A4A4A;
 }
 
 body {
@@ -234,8 +235,14 @@ header {
     display: inline-block;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
+}
+
+.icon {
+  display: inline-block;
+  height: 40px;
+  padding: 8px 10px 0 0;
 }
 
 #logo {
@@ -250,10 +257,9 @@ header {
 }
 
 /* Sublogo */
-/* ---------------------------------- */
 .small {
   font-family: "Assistant", "Verdana", sans-serif;
-  color: black;
+  color: #4A4A4A;
   font-size: 14px;
   font-weight: 300;
   margin: 0 0 0 0;
@@ -294,14 +300,15 @@ a:hover {
 }
 
 .unselected:visited {
-  color: black;
+  color: #4A4A4A;
+  font-weight: 400;
 
 }
 
 .primaryNav {
     display: inline;
-    color: black;
-    transition: all 0.3s ease-out;
+    color: #4A4A4A;
+    // transition: all 0.3s ease-out;
     font-size: 16px;
     font-weight: 300;
     font-family: "Montserrat", "Verdana", sans-serif;
@@ -309,13 +316,13 @@ a:hover {
 }
 
 .primaryNavItems {
-    color: black;
-    opacity: 0.7;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    color: #4A4A4A;
+    text-transform: uppercase;
+    // -webkit-transition: all 0.3s linear;
+    // -moz-transition: all 0.3s ease;
+    // -ms-transition: all 0.3s ease;
+    // -o-transition: all 0.3s ease;
+    // transition: all 0.3s ease;
 
 }
 
@@ -347,9 +354,9 @@ a:hover {
   text-align: center;
   top: 60%;
   transform: translateY(-60%);
-  width: 600px;
-  margin-left: calc(50% - 300px);
-  margin-right: calc(50% - 300px);
+  width: 900px;
+  margin-left: calc(50% - 450px);
+  margin-right: calc(50% - 450px);
 }
 
 @keyframes hellobox {
@@ -364,12 +371,12 @@ a:hover {
 }
 
 .hello { /* h1 */
-  font-size: 24px;
+  font-size: 26px;
   font-family: "Montserrat", "Verdana", sans-serif;
   font-weight: 400;
   margin: 0;
-  color: black;
-  line-height: 32px;
+  color: #4A4A4A;
+  line-height: 40px;
 }
 
 .superlogo { /* span */
@@ -533,7 +540,7 @@ a:hover {
   height: 500px;
   width: 100%;
   transition: all 0.3s ease-out;
-  background-color: black;
+  background-color: #4A4A4A;
   /* background-attachment: fixed; */
   background-position: right top;
   background-repeat: no-repeat;
@@ -673,7 +680,7 @@ footer {
 }
 
 #backToTop i {
-  color: black;
+  color: #4A4A4A;
   margin: 0;
   position: relative;
   display: block;
@@ -709,7 +716,7 @@ h2 { /* key insight */
   font-family: "Assistant", "Verdana", sans-serif;
   font-weight: 600;
   /* color: #147DB2; */
-  color: black;
+  color: #4A4A4A;
   line-height: 44px;
 
 }
@@ -732,7 +739,7 @@ h2 { /* key insight */
   font-family: "Montserrat", "Verdana", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: black;
+  color: #4A4A4A;
   opacity: 0.7;
   margin: 0 0 24px 0;
   padding: 0;
@@ -744,7 +751,7 @@ h2 { /* key insight */
   font-family: "Montserrat", "Verdana", sans-serif;
   font-size: 13px;
   font-weight: 300;
-  color: black;
+  color: #4A4A4A;
   opacity: 0.7;
   margin: 0;
   padding: 0;
@@ -757,7 +764,7 @@ h3 { /* e.g. my role, tile header */
   /* margin: 16px 0 12px 0; */
   padding: 0;
   margin: 0 0 12px 0;
-  color: black;
+  color: #4A4A4A;
   font-weight: 600;
   font-family: "Assistant", "Verdana", sans-serif;
 }
@@ -765,7 +772,7 @@ h3 { /* e.g. my role, tile header */
 .h3subheader {
   font-family: "Assistant", "Verdana", sans-serif;
   font-weight: 300;
-  color: black;
+  color: #4A4A4A;
   font-size: 14px;
 }
 
@@ -890,6 +897,24 @@ strong {
   }
 
   /* 3. PORTFOLIO HOME */
+  .introcontainer {
+    height: 300px;
+    animation-name: hellobox;
+    animation-duration: 2s;
+  }
+
+  .introtext {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    top: 65%;
+  }
+
+  @keyframes hellobox {
+    0% {height: 100px;}
+    60% {height: 300px;}
+  }
+
   .projecttile {
     width: calc(50% - 44px);
   }
@@ -1027,7 +1052,8 @@ strong {
   /* ------------------------------- */
   header {
     /* padding-top: 32px; */
-    margin-bottom: 16px;
+    margin: 16px 0 16px 0;
+    width: 100%;
     }
 
   .logoBlock {
@@ -1066,23 +1092,8 @@ strong {
 
   /* 3. PORTFOLIO HOME */
   /* ------------------------------- */
-  .introcontainer {
-    height: auto;
-    padding: 24px 0 32px 0;
-  }
-
-  .introtext {
-    position: static;
-    top: 0%;
-    transform: none;
-    /* display: block; */
-    display: none;
-    width: calc(100% - 160px);
-    margin: 48px 80px 0 80px;
-  }
-
   .hello {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 26px;
   }
 
@@ -1093,17 +1104,6 @@ strong {
 
   .hellosubheader {
     font-size: 22px;
-  }
-
-  @keyframes hellobox {
-    0% {height: auto;}
-    60% {height: auto;}
-  }
-
-  @keyframes hellotext {
-    0% {opacity: 0.0;}
-    15% {opacity: 0.0;}
-    60% {opacity: 1.0;}
   }
 
   .projecttile {

@@ -9,4 +9,5 @@ Smart homes, education, retirement planning, power management, aviation, and hea
 <br>
 My background is in Human-Computer Interaction -- I earned my Master's in HCI from Carnegie Mellon University in 2017.   
 <br>
-Overall I love working with teams to solve complex problems, figuring out the best way to find a solution that balances user and business needs and incorporates each team member's ideas and skills.
+Lately I've been enjoying reading mystery novels, painting, planting, cooking, video games, and dancing.
+&#128373; &#127912; &#127793; &#127859; &#127918; &#127926;
