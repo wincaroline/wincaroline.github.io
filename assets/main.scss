@@ -182,8 +182,8 @@ video {
 header {
   background-color: transparent;
   position: relative;
-  width: calc(100% - 72px);
-  margin: 0 32px 0 32px;
+  width: calc(100% - 52px);
+  margin: 0 32px 0 20px;
   top: 0%;
   height: 80px;
 }
@@ -231,7 +231,7 @@ header {
 .icon {
   display: inline-block;
   height: 40px;
-  padding: 8px 10px 0 0;
+  padding: 10px 10px 0 0;
 }
 
 #logo {
@@ -263,7 +263,7 @@ header {
   margin: 0;
   float: right;
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 0;
   transform: translateY(-50%);
 }
