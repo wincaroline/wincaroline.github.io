@@ -35,7 +35,7 @@
 
               {% if post.layout == "casestudy" %}
               <li class = "projecttile">
-              <a href="{{ post.url | relative_url }}">
+              <a href="{{ post.url | relative_url }}" onclick="gtag('event', 'click-{{ post.title }}', {'event_category': 'selectedwork', 'event_label': '{{ post.title }}'});">
                   <img class="homeImg" src="{{ post.projectimg }}">
                   <div class="projectText">
                     <div class="hometiletext">

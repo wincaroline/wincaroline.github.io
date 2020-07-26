@@ -12,8 +12,8 @@
     <div class="grayBackground">
       <div class="containernarrow" style="text-align: center;">
         <h2 class="preheaderlightL">RESUME</h2>
-        <a href="{{ page.file }}"><img src="{{ page.image }}" class="resume" alt="resume"></a><br>
-        <a href="{{ page.file }}"><button>View PDF of Resume</button></a>
+        <a href="{{ page.file }}" onclick="gtag('event', 'click-resumeimg', {'event_category': 'resume', 'event_label': 'resumeimg'});"><img src="{{ page.image }}" class="resume" alt="resume"></a><br>
+        <a href="{{ page.file }}" onclick="gtag('event', 'click-resumebutton', {'event_category': 'resume', 'event_label': 'resumebutton'});"><button>View PDF of Resume</button></a>
       </div>
   </div>
 

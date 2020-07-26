@@ -59,7 +59,7 @@
               <div class="halfleft">
                 {% if page.previous.url %}
                 <p class="prevnext">Previous</p>
-                <a href="{{ page.previous.url }}" class="prevnextlink">{{ page.previous.title }}</a>
+                <a href="{{ page.previous.url }}" class="prevnextlink" onclick="gtag('event', 'click-previous', {'event_category': 'casestudy', 'event_label': 'previous'});">{{ page.previous.title }}</a>
                 <p>{{ page.previous.date | date: date_format }}</p>
                 {% endif %}
               </div>
@@ -69,7 +69,7 @@
               <div class="halfright right">
                 {% if page.next.url %}
                 <p class="prevnext">Next</p>
-                <a href="{{ page.next.url }}" class="prevnextlink">{{ page.next.title }}</a>
+                <a href="{{ page.next.url }}" class="prevnextlink" onclick="gtag('event', 'click-next', {'event_category': 'casestudy', 'event_label': 'next'});">{{ page.next.title }}</a>
                 <p>{{ page.next.date | date: date_format }}</p>
                 {% endif %}
               </div>
