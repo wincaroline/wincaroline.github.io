@@ -9,25 +9,25 @@
   <ul>
   <li class = "primaryNav">
     {% if page.title == "Portfolio" %}
-    <a class = "selected primaryNavItems" href = "/index.html" onclick="gtag('event', 'click', {'event_category': 'nav', 'event_label': 'portfolio'});"> PORTFOLIO </a>
+    <a class = "selected primaryNavItems" href = "/index.html" onclick="gtag('event', 'click-portfolio', {'event_category': 'nav', 'event_label': 'portfolio'});"> PORTFOLIO </a>
     {% else %}
-    <a class = "unselected primaryNavItems" href = "/index.html" onclick="gtag('event', 'click', {'event_category': 'nav', 'event_label': 'portfolio'});"> PORTFOLIO </a>
+    <a class = "unselected primaryNavItems" href = "/index.html" onclick="gtag('event', 'click-portfolio', {'event_category': 'nav', 'event_label': 'portfolio'});"> PORTFOLIO </a>
     {% endif %}
   </li>
 
   <li class = "primaryNav">
     {% if page.title == "About" %}
-    <a class = "selected primaryNavItems" href = "/about.html" onclick="gtag('event', 'click', {'event_category': 'nav', 'event_label': 'about'});"> ABOUT </a>
+    <a class = "selected primaryNavItems" href = "/about.html" onclick="gtag('event', 'click-about', {'event_category': 'nav', 'event_label': 'about'});"> ABOUT </a>
     {% else %}
-    <a class = "unselected primaryNavItems" href = "/about.html" onclick="gtag('event', 'click', {'event_category': 'nav', 'event_label': 'about'});"> ABOUT </a>
+    <a class = "unselected primaryNavItems" href = "/about.html" onclick="gtag('event', 'click-about', {'event_category': 'nav', 'event_label': 'about'});"> ABOUT </a>
     {% endif %}
   </li>
 
   <li class = "primaryNav">
     {% if page.title == "Resume" %}
-    <a class = "selected primaryNavItems" href = "/resume.html" onclick="gtag('event', 'click', {'event_category': 'nav', 'event_label': 'resume'});"> RESUME </a>
+    <a class = "selected primaryNavItems" href = "/resume.html" onclick="gtag('event', 'click-resume', {'event_category': 'nav', 'event_label': 'resume'});"> RESUME </a>
     {% else %}
-    <a class = "unselected primaryNavItems" href = "/resume.html" onclick="gtag('event', 'click', {'event_category': 'nav', 'event_label': 'resume'});"> RESUME </a>
+    <a class = "unselected primaryNavItems" href = "/resume.html" onclick="gtag('event', 'click-resume', {'event_category': 'nav', 'event_label': 'resume'});"> RESUME </a>
     {% endif %}
   </li>
 
